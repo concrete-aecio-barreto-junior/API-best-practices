@@ -60,15 +60,79 @@ Um grande desafio, durante o ciclo de vida da API, é lancar versões que consig
 
 ## Desenvolva baseado em especificações
 
-A definição da API durante seu desenvolvimento pode tornar a construção mais rápida inicialmente, porém inconsistente durante o decorrer da fase de codificação. Para garantir então que voce desenvolva uma API consistente e com padrões reutilizáveis existem especificações de modelagemns como RAML.
+A definição da API durante seu desenvolvimento pode tornar a construção mais rápida inicialmente, porém inconsistente durante o decorrer da fase de codificação. Para garantir então que voce desenvolva uma API consistente e com padrões reutilizáveis existem especificações de modelagens como RAML.
 
 Quando o desenvolvimento é baseado em especificações demais benefícios são garantidos sobretudo a rapidez, padronização e universalidade dos métodos, que serão facilmente implementados pelos desenvolvedores. Assim é necessário planejar, desenhar e especificar a API antes de construí-la.
 
- 
+## Representações de recursos
 
+Conforme o modelo de API utilizado os recursos devem ser representados de maneiras diferentes. No caso de um modelo REST os recursos devem corresponder a substantivos, diferente de modelos como JSON-RPC que fazem uso de verbos, indicando ações.
+
+O verbo está diretamente ligado a uma ação geralmente
+
+Seguem ambos exemplos:
+
+- JSON-RPC:
+
+/adicionarNovoEmpregado/
+/atualizarEmpregado/
+/deletarEmpregado/
+/deletarTodosEmpregados/
+
+ - REST:
+/empregado/id/1
+/pedido/
+
+Como boa prática a representação de recursos devem seguir o modelo da API sendo no plural, quando tratar-se de substantivos e, no singular quando representarem ações específicas.
+
+## CRUD
+
+Da mesma maneira que uso do CRUD é amplamente utilizado independente da plataforma tecnológica o uso deste modelo é mais uma boa prática recomendada para o desenvolvimento de API's eficientes.
+
+Quanto ao modelo REST, este apresenta total compatibilidade entre os `verbos/métodos: HTTP (POST,GET,PUT|PATCH,DELETE)` e as operaçÕes `CRUD (create, read, update, delete)` respectivamente.
+
+## JSON
+
+A adoção do padrão JSON como respostas além da simplicidade e versatilidade, durante a implementação e utilização, garante também performance, baixo custo de rede e eficiência de armazenamento em cache. Estas vantagens colocam o JSON como um padrão diferenciado frente a demais modelos como XML, css, html e até mesmo JavaScript.
+
+Fazer uso deste padrão sempre que possível é aplicar mais uma boa pratica.
+
+## Content-Type Header
+
+Construir uma API pensando em garantir flexibilidade e extensibilidade requer que esta seja capaz de lidar com diversos tipos de mensagens, principalmente quando se tem tipos de conteúdos emergentes e concorrentes como JSON e YAML, ganhando mercado sobre outros que estão se tornando obsoletos. Como exemplo o XML, que além de muito verboso e redundante, tem um custo maior de processamento e transmissão.
+
+Tendencias indicam que o XML tem perdido espaço p/ o JSON: https://trends.google.com/trends/explore?date=all&q=xml%20api,json%20api
+
+Mediante a tantas possibilidades de conteúdos, a flexibilidade e extensibilidade apenas são obtidas quando a API consegue dialogar com cliente conforme o padrão requisitado por ele. Para então responder no mesmo formado requisitado é imprescindível utilizar o header "Content-type", responsável determinar o idioma. Uma API que suporta padrões de conteúdos diversos e responde no mesmo "idioma" requisitado se mostra ser flexível e de acordo com boas práticas.
+
+
+## HTTP exit status correctly
+
+O protocolo HTTP dispõe de um incrível pool de exit status quais devem garantir precisão nas respostas as requisições. O adequado uso das saídas garantirá um dialogo perfeito entre a API e a aplicação requisitante, o que assegurará maior controle das operaçÕes nas mãos dos desenvolvedores.
+
+Os exit status garante o status de resposta as operações CRUD requisitadas. Seguem exemplos:
+
+## filtering, sorting, field selection and paging
+
+
+## SSL
+
+Com o uso massivo de API e pela oferta de redes dados são trafegados indiscriminadamente.
+
+## HATEOAS
+
+## Segurança e limitação de recursos
+
+
+## Caching
+
+## Forneça documentação
 
 ## links úteis
+https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/
+https://trends.google.com/trends/explore?date=all&q=xml%20api,json%20api
 https://youtu.be/llpr5924N7E - Todd Frederick Intro to REST (aka. What Is REST Anyway?)
 http://www.restapitutorial.com/
 http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+http://jsonapi.org/
 https://raml.org/
