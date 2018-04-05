@@ -115,13 +115,17 @@ Os exit status garante o status de resposta as operações CRUD requisitadas. Se
 ## filtering, sorting, field selection and paging
 
 
+
 ## SSL
 
-Com o uso massivo de API e pela oferta de redes dados são trafegados indiscriminadamente.
+A segurança da API é mais um aspecto que deve ser considerado criteriosamente independente dela lidar com dados sensíveis. Uma boa prática é fazer uso do SSL, pois este protocolo garante a segurança dos dados enquanto transmitidos através das redes.
+
+O SSL representa uma dos mais importantes artifícios de segurança da segurança da web na atualidade por garantir, dente outros aspectos, a autenticidade, integridade e confidencialidade dos dados enquanto transmitidos.
+
+Sabendo que não há segurança perfeita, entenda que uso o SSL "apenas" não irá garantir a segurança suficiente a API. Riscos não
 
 ## HATEOAS
 
-## Segurança e limitação de recursos
 
 
 ## Caching
@@ -129,10 +133,11 @@ Com o uso massivo de API e pela oferta de redes dados são trafegados indiscrimi
 ## Forneça documentação
 
 ## links úteis
-https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/
-https://trends.google.com/trends/explore?date=all&q=xml%20api,json%20api
-https://youtu.be/llpr5924N7E - Todd Frederick Intro to REST (aka. What Is REST Anyway?)
-http://www.restapitutorial.com/
-http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
-http://jsonapi.org/
-https://raml.org/
+- https://www.sslshopper.com/why-ssl-the-purpose-of-using-ssl-certificates.html
+- https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/
+- https://trends.google.com/trends/explore?date=all&q=xml%20api,json%20api
+- https://youtu.be/llpr5924N7E - Todd Frederick Intro to REST (aka. What Is REST Anyway?)
+- http://www.restapitutorial.com/
+- http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+- http://jsonapi.org/
+- https://raml.org/
