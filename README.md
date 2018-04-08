@@ -11,7 +11,7 @@ Literaturas extensas comumente são mantidas TL;DR. Para tanto, seguem uma compi
 
 ## Boas práticas
 
-### - Planejamento da API - Entender qual propósito da API:
+### Planejamento da API - Entender qual propósito da API:
 
 Antes de começar a construir sua API é vital a compreensão dos aspectos a nível de negócio acerca da API. Deve ser bem esclarecido sobre quais métodos deverão ser construídos, assim como também como serão utilizadas e por quem.
 
@@ -19,11 +19,11 @@ Essa compreensão irá garantir que o desenvolvimento seja feito sobre medida p/
 
 Após compreender o porque da API, é importante elencar e reunir os artefatos, como user stories, que descrevam detalhadamente as funcionalidades requeridas pelo cliente, que pode ser envolvido nesse momento descrevendo assim as funcionalidades necessárias e suas repectivas prioridades, de modo agilista inclusive.
 
-### - Definir o tipo da API
+### Definir o tipo da API
 
 Quanto ao tipo de API deverá ser adotado, muito dependerá das necessidades do cliente, comentadas no parágrafo anterior. Dentre tipos comuns de API temos a RESTful, a SOAP, e até mesmo a JSON-RPC. Embora cada uma tenha sua peculiaridades e diferentes aplicabilidades, a REST possuí "padrões"  bem definidos e atuais. A REST apresenta diversas vantagens sobre as demais. Vide imagem.
 
-### - Long term e versionamento
+### Long term e versionamento
 
 API's devem ser construídas de maneira a serem extensíveis e sobre padrões e principalmente para serem duráveis. Por seguirem padrões requerem a manutenção constante dela de maneira a otimizar e ampliar suas funcionalidades. O esforço investido na API deve ser focado na extensão das possibilidades e otimização dela e não em correção de bugs. Isto irá garantir que ela cumpra seu papel com eficácia e atenda aos objetivos do cliente sobretudo.
 
@@ -39,9 +39,7 @@ Quando o desenvolvimento é baseado em especificações demais benefícios são 
 
 ### Representações de recursos
 
-De acordo com o modelo de API adotado os recursos devem ser representados de maneiras diferentes. No caso de um modelo REST, os recursos devem corresponder a substantivos, diferente de modelos como JSON-RPC que fazem uso de verbos, indicando ações.
-
-O verbo está diretamente ligado a uma ação geralmente
+De acordo com o modelo de API adotado os recursos devem ser representados de maneiras diferentes. No caso de um modelo REST, os recursos devem corresponder a substantivos, diferente de modelos como JSON-RPC que fazem uso de verbos, indicando ações. O verbo está diretamente ligado a uma ação geralmente.
 
 Seguem ambos exemplos:
 
