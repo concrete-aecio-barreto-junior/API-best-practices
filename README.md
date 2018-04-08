@@ -3,27 +3,27 @@
 
 
 
-Centenas de milhares API's públicas e privadas respondem a infinitas possibilidades na web. Dessa maneira não restam dúvidas sobre o fundamental papel da API durante a transformação digital. Para o desenvolvimento de API's que agreguem valor e que que sejam eficientes em suas propostas, é fundamental considerar e adotar melhores praticas para seu desenvolvimento.
+Centenas de milhares API's públicas e privadas respondem a infinitas possibilidades na web restando dúvidas sobre o fundamental papel da API durante a transformação digital. Para o desenvolvimento de API eficientes em suas propostas, a adoção de melhores praticas para o seu desenvolvimento é imprescindível.
 
-Construir API's eficientes, flexíveis e escaláveis tem sido uma tarefa árdua mediante a demanda e mediante também a infinidade de frameworks disponíveis. Embora muitos dos frameworks sejam projetados de maneira coerente com as melhores praticas, estas são negligenciadas por muitos desenvolvedores em detrimento a emergente demanda pelo desenvolvimento da API.
+Construir API's flexíveis e escaláveis tem sido uma tarefa árdua mediante a demanda e mediante também a infinidade de frameworks disponíveis. Embora muitos dos frameworks sejam projetados de maneira coerente com as melhores praticas, estas são negligenciadas por muitos desenvolvedores em detrimento a emergente demanda pelo desenvolvimento da API.
 
 Literaturas extensas comumente são mantidas TL;DR. Para tanto, seguem uma compilação de boas práticas obtidas de artigos
 
 ## Boas práticas
 
-### Planejamento da API - Entender qual propósito da API:
+### Planejamento da API
 
-Antes de começar a construir sua API é vital a compreensão dos aspectos a nível de negócio acerca da API. Deve ser bem esclarecido sobre quais métodos deverão ser construídos, assim como também como serão utilizadas e por quem.
+Antes de começar a construir sua API é vital a compreensão dos aspectos a nível de negócio e qual o propósito da API. Deve ser bem esclarecido sobre quais métodos deverão ser construídos, assim como também como serão utilizadas e por quem.
 
 Essa compreensão irá garantir que o desenvolvimento seja feito sobre medida p/ a necessidade. Desde a escolha da tecnologia adequada até XXXXX.
 
 Após compreender o porque da API, é importante elencar e reunir os artefatos, como user stories, que descrevam detalhadamente as funcionalidades requeridas pelo cliente, que pode ser envolvido nesse momento descrevendo assim as funcionalidades necessárias e suas repectivas prioridades, de modo agilista inclusive.
 
-### Definir o tipo da API
+### Definição do tipo da API
 
 Quanto ao tipo de API deverá ser adotado, muito dependerá das necessidades do cliente, comentadas no parágrafo anterior. Dentre tipos comuns de API temos a RESTful, a SOAP, e até mesmo a JSON-RPC. Embora cada uma tenha sua peculiaridades e diferentes aplicabilidades, a REST possuí "padrões"  bem definidos e atuais. A REST apresenta diversas vantagens sobre as demais. Vide imagem.
 
-### Long term e versionamento
+### Considerações sobre tempo de vida e versionamento
 
 API's devem ser construídas de maneira a serem extensíveis e sobre padrões e principalmente para serem duráveis. Por seguirem padrões requerem a manutenção constante dela de maneira a otimizar e ampliar suas funcionalidades. O esforço investido na API deve ser focado na extensão das possibilidades e otimização dela e não em correção de bugs. Isto irá garantir que ela cumpra seu papel com eficácia e atenda aos objetivos do cliente sobretudo.
 
@@ -31,7 +31,7 @@ Para o devido lançamento de melhorias, extensões e/ou correções deve-se adot
 
 Um grande desafio, durante o ciclo de vida da API é lançar versões que consigam manter a compatibilidade entre os demais níveis ao mesmo tempo que atualizações sejam promovidas com o mínimo de impacto. Assim, este é o grande motivo que nos obriga a construir API's com foco no logo prazo da sua duração.
 
-### Desenvolva baseado em especificações
+### Desenvolvimento baseado em especificações
 
 A definição da API quando realizada durante o seu desenvolvimento pode tornar a construção mais rápida inicialmente, porém inconsistente durante o decorrer da fase de codificação. Para garantir então o desenvolvimento de uma API consistente e com padrões reutilizáveis existem especificações de modelagens como RAML.
 
@@ -82,17 +82,17 @@ Tendencias indicam que o XML tem perdido espaço p/ o JSON:
 ![Comparsion](https://github.com/concrete-aecio-barreto-junior/API-best-practices/blob/master/images/comparsion.png "Comparsion")
 [Comparação xml x json api's (Google Trends)](https://trends.google.com/trends/explore?date=all&q=xml%20api,json%20api)
 
-### HTTP exit status correctly
+### Tratamento adequado dos status de retorno HTTP (exit status)
 
 O protocolo HTTP dispõe de um incrível pool de exit status quais devem garantir precisão nas respostas as requisições. O adequado uso das saídas garantirá um dialogo perfeito entre a API e a aplicação requisitante, o que assegurará maior controle das operaçÕes nas mãos dos desenvolvedores.
 
 Os exit status garante o status de resposta as operações CRUD requisitadas. Seguem exemplos:
 
-### filtering, sorting, field selection and paging
+### Filtering, sorting, field selection and paging
 
 
 
-### SSL
+### Segurança: Uso do SSL
 
 A segurança da API é mais um aspecto que deve ser considerado criteriosamente independente dela lidar com dados sensíveis. Uma boa prática é fazer uso do SSL, pois este protocolo garante a segurança dos dados enquanto transmitidos através das redes.
 
@@ -102,20 +102,19 @@ Sabendo que não há segurança perfeita, entenda que uso o SSL "apenas" não ir
 
 ### HATEOAS
 
-
 ### Caching
 
-### Forneça documentação
+### Documentação
 
 ## Glossário
 
-### API
+### API:
 
 `"Application Programming Interface - API"`: Como o próprio acrônimo sugere trata-se de uma interface destinada a interoperabilidade entre sistemas híbridos. Através de API's uma linguagem comum é assegurada para comunicação entre aplicações de diferentes tipos de plataformas tecnológicas. A "API" é uma dentre tantas outras protagonistas responsáveis pela Transformação digital. Ela cumpre papel importante no mercado digital.
 
 Ela fornece uma camada de abstração entre sistemas de maneira a garantir a portabilidade do código p/ diversas linguagens.
 
-### API RESTful
+### RESTful:
 
 Dentre tipos de API destacamos a REST = "REpresentational State Transfer". Sua principal característica é não precisar manter informações de estado do cliente, sendo então uma API stateless. Esta caraterística assegura ser uma API leve, pois todas as informações necessárias p/ serem processadas pelo servidor estarão contidas na requisição feita pelo cliente.
 
