@@ -75,13 +75,12 @@ A adoção do padrão JSON como respostas além da simplicidade e versatilidade,
 
 Construir uma API pensando em garantir flexibilidade e extensibilidade requer que esta seja capaz de lidar com diversos tipos de mensagens, principalmente quando se tem tipos de conteúdos emergentes e concorrentes como JSON e YAML, ganhando mercado sobre outros que estão se tornando obsoletos. Como exemplo o XML, que além de muito verboso e redundante, tem um custo maior de processamento e transmissão.
 
+Mediante a tantas possibilidades de conteúdos, a flexibilidade e extensibilidade apenas são obtidas quando a API consegue dialogar com cliente conforme o padrão requisitado por ele. Para então responder no mesmo formado requisitado é imprescindível utilizar o header "Content-type", responsável determinar o idioma. Uma API que suporta padrões de conteúdos diversos e responde no mesmo "idioma" requisitado se mostra ser flexível e de acordo com boas práticas.
+
 Tendencias indicam que o XML tem perdido espaço p/ o JSON:
 
 ![Comparsion](https://github.com/concrete-aecio-barreto-junior/API-best-practices/blob/master/images/comparsion.png "Comparsion")
 [Comparação xml x json api's (Google Trends)](https://trends.google.com/trends/explore?date=all&q=xml%20api,json%20api)
-
-Mediante a tantas possibilidades de conteúdos, a flexibilidade e extensibilidade apenas são obtidas quando a API consegue dialogar com cliente conforme o padrão requisitado por ele. Para então responder no mesmo formado requisitado é imprescindível utilizar o header "Content-type", responsável determinar o idioma. Uma API que suporta padrões de conteúdos diversos e responde no mesmo "idioma" requisitado se mostra ser flexível e de acordo com boas práticas.
-
 
 ### HTTP exit status correctly
 
