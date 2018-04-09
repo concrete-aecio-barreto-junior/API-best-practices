@@ -1,13 +1,11 @@
 
 # API - Melhores práticas p/ criação (segundo Dr Roy Fielding)
 
-
-
 Centenas de milhares API's públicas e privadas respondem a infinitas possibilidades na web não restando assim dúvidas sobre o fundamental papel da API's durante a transformação digital. Para o desenvolvimento de API eficientes em suas propostas, a adoção de melhores praticas para o seu desenvolvimento é imprescindível.
 
 Construir API's flexíveis e escaláveis tem sido uma tarefa árdua mediante a demanda e mediante também a infinidade de frameworks disponíveis. Embora muitos dos frameworks sejam projetados de maneira coerente com as melhores praticas, estas são negligenciadas por muitos desenvolvedores em detrimento a emergente demanda pelo desenvolvimento da API.
 
-Literaturas extensas comumente são mantidas TL;DR. Para tanto, seguem uma compilação de boas práticas obtidas de artigos
+Literaturas extensas comumente são classificadas como `[TL;DR](https://en.wikipedia.org/wiki/TL;DR)`. Para tanto, segue uma compilação de boas práticas obtida da internet.
 
 ## Boas práticas
 
@@ -65,22 +63,22 @@ Seguem ambos exemplos:
 
 Da mesma maneira que uso do CRUD é amplamente utilizado independente da plataforma tecnológica o uso deste modelo é mais uma boa prática recomendada para o desenvolvimento de API's eficientes.
 
-Quanto ao modelo REST, este apresenta total compatibilidade entre os verbos/métodos HTTP `POST`,`GET`,`PUT|PATCH`,`DELETE` e as operações CRUD `create`, `read`, `update`, `delete` respectivamente.
+Quanto ao modelo REST este apresenta total compatibilidade entre os verbos/métodos HTTP `POST`,`GET`,`PUT|PATCH`,`DELETE` e as operações CRUD `create`, `read`, `update`, `delete` respectivamente.
 
 ### JSON
 
-A adoção do padrão JSON como respostas além da simplicidade e versatilidade, durante a implementação e utilização, garante também performance, baixo custo de rede e eficiência de armazenamento em cache. Estas vantagens colocam o JSON como um padrão diferenciado frente a demais modelos como XML, css, html e até mesmo JavaScript.
-
-### Content-Type Header
-
-Construir uma API pensando em garantir flexibilidade e extensibilidade requer que esta seja capaz de lidar com diversos tipos de mensagens, principalmente quando se tem tipos de conteúdos emergentes e concorrentes como JSON e YAML, ganhando mercado sobre outros que estão se tornando obsoletos. Como exemplo o XML, que além de muito verboso e redundante, tem um custo maior de processamento e transmissão.
-
-Mediante a tantas possibilidades de conteúdos, a flexibilidade e extensibilidade apenas são obtidas quando a API consegue dialogar com cliente conforme o padrão requisitado por ele. Para então responder no mesmo formado requisitado é imprescindível utilizar o header "Content-type", responsável determinar o idioma. Uma API que suporta padrões de conteúdos diversos e responde no mesmo "idioma" requisitado se mostra ser flexível e de acordo com boas práticas.
+A adoção do padrão JSON como respostas, além da simplicidade e versatilidade, durante a implementação e utilização, garante também performance, baixo custo de rede e eficiência de armazenamento em cache. Estas vantagens colocam o JSON como um padrão diferenciado frente a demais modelos como XML, css, html e até mesmo JavaScript.
 
 Tendencias indicam que o XML tem perdido espaço p/ o JSON:
 
 ![Comparsion](https://github.com/concrete-aecio-barreto-junior/API-best-practices/blob/master/images/comparsion.png "Comparsion")
 [Comparação xml x json api's (Google Trends)](https://trends.google.com/trends/explore?date=all&q=xml%20api,json%20api)
+
+### Content-Type Header
+
+Construir uma API pensando em garantir flexibilidade e extensibilidade requer que esta seja capaz de lidar com diversos tipos de mensagens, principalmente quando se tem tipos de conteúdos emergentes e concorrentes como `JSON` e `YAML`, ganhando mercado sobre outros que estão se tornando obsoletos. Como exemplo o `XML`, que além de muito verboso e redundante, tem um custo maior de processamento e transmissão.
+
+Mediante a tantas possibilidades de conteúdos, a flexibilidade e extensibilidade apenas são obtidas quando a API consegue dialogar com cliente conforme o padrão requisitado por ele. Para então responder no mesmo formado requisitado é imprescindível utilizar o header "Content-type", responsável determinar o idioma. Uma API que suporta padrões de conteúdos diversos e responde no mesmo "idioma" requisitado se mostra ser flexível e de acordo com boas práticas.
 
 ### Tratamento adequado dos status de retorno HTTP (exit status)
 
@@ -98,7 +96,7 @@ A segurança da API é mais um aspecto que deve ser considerado criteriosamente 
 
 O SSL representa uma dos mais importantes artifícios de segurança da segurança da web na atualidade por garantir, dente outros aspectos, a autenticidade, integridade e confidencialidade dos dados enquanto transmitidos.
 
-Sabendo que não há segurança perfeita, entenda que uso o SSL "apenas" não irá garantir a segurança suficiente a API. Riscos não
+Deve ser considerado que uso o SSL "apenas" não irá garantir a segurança plena da API. Demais artifícios e práticas de "hardening", no código e na infraestrutura (middleware), devem ser aplicados de maneira a mitigar ao máximo os risco e vulnerabilidades de segurança antes da publicação da API.
 
 ### HATEOAS
 
