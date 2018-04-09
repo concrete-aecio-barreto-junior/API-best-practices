@@ -1,11 +1,15 @@
 
-# API - Melhores práticas p/ criação (segundo Dr Roy Fielding)
+__[Concrete Solutions](http://www.concretesolutions.com.br) | DevOps - OnBoarding__
+
+# **Trello (Card):** API: Write a text about the best practices when creating a API
+
+# API - Melhores práticas
 
 Centenas de milhares API's públicas e privadas respondem a infinitas possibilidades na web não restando assim dúvidas sobre o fundamental papel da API's durante a transformação digital. Para o desenvolvimento de API eficientes em suas propostas, a adoção de melhores praticas para o seu desenvolvimento é imprescindível.
 
 Construir API's flexíveis e escaláveis tem sido uma tarefa árdua mediante a demanda e mediante também a infinidade de frameworks disponíveis. Embora muitos dos frameworks sejam projetados de maneira coerente com as melhores praticas, estas são negligenciadas por muitos desenvolvedores em detrimento a emergente demanda pelo desenvolvimento da API.
 
-Literaturas extensas comumente são classificadas como `[TL;DR](https://en.wikipedia.org/wiki/TL;DR)`. Para tanto, segue uma compilação de boas práticas obtida da internet.
+Literaturas extensas comumente são classificadas como [TL;DR](https://en.wikipedia.org/wiki/TL;DR). Para tanto, segue uma compilação de boas práticas obtida da internet.
 
 ## Boas práticas
 
