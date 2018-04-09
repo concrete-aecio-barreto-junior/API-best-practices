@@ -3,7 +3,7 @@
 
 
 
-Centenas de milhares API's públicas e privadas respondem a infinitas possibilidades na web restando dúvidas sobre o fundamental papel da API durante a transformação digital. Para o desenvolvimento de API eficientes em suas propostas, a adoção de melhores praticas para o seu desenvolvimento é imprescindível.
+Centenas de milhares API's públicas e privadas respondem a infinitas possibilidades na web não restando assim dúvidas sobre o fundamental papel da API's durante a transformação digital. Para o desenvolvimento de API eficientes em suas propostas, a adoção de melhores praticas para o seu desenvolvimento é imprescindível.
 
 Construir API's flexíveis e escaláveis tem sido uma tarefa árdua mediante a demanda e mediante também a infinidade de frameworks disponíveis. Embora muitos dos frameworks sejam projetados de maneira coerente com as melhores praticas, estas são negligenciadas por muitos desenvolvedores em detrimento a emergente demanda pelo desenvolvimento da API.
 
@@ -15,7 +15,7 @@ Literaturas extensas comumente são mantidas TL;DR. Para tanto, seguem uma compi
 
 Antes de começar a construir sua API é vital a compreensão dos aspectos a nível de negócio e qual o propósito da API. Deve ser bem esclarecido sobre quais métodos deverão ser construídos, assim como também como serão utilizadas e por quem.
 
-Essa compreensão irá garantir que o desenvolvimento seja feito sobre medida p/ a necessidade. Desde a escolha da tecnologia adequada até XXXXX.
+Essa compreensão irá garantir que o desenvolvimento seja feito sobre medida e com as tecnologias adequadas.
 
 Após compreender o porque da API, é importante elencar e reunir os artefatos, como user stories, que descrevam detalhadamente as funcionalidades requeridas pelo cliente, que pode ser envolvido nesse momento descrevendo assim as funcionalidades necessárias e suas repectivas prioridades, de modo agilista inclusive.
 
@@ -65,7 +65,7 @@ Seguem ambos exemplos:
 
 Da mesma maneira que uso do CRUD é amplamente utilizado independente da plataforma tecnológica o uso deste modelo é mais uma boa prática recomendada para o desenvolvimento de API's eficientes.
 
-Quanto ao modelo REST, este apresenta total compatibilidade entre os verbos/métodos: **HTTP** (`POST`,`GET`,`PUT|PATCH`,`DELETE`) e as **operações CRUD** (`create`, `read`, `update`, `delete`) respectivamente.
+Quanto ao modelo REST, este apresenta total compatibilidade entre os verbos/métodos **HTTP (`POST`,`GET`,`PUT|PATCH`,`DELETE`)** e as **operações CRUD (`create`, `read`, `update`, `delete`)** respectivamente.
 
 ### JSON
 
