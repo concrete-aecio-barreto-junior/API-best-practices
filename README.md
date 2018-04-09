@@ -1,7 +1,7 @@
 
 __[Concrete Solutions](http://www.concretesolutions.com.br) | DevOps - OnBoarding__
 
-# **Trello (Card):** API: Write a text about the best practices when creating a API
+# **Trello (Card):** API - Write a text about the best practices when creating a API
 
 # API - Melhores práticas
 
@@ -23,31 +23,29 @@ Após compreender o porque da API, é importante elencar e reunir os artefatos, 
 
 ### Definição do tipo da API
 
-Quanto ao tipo de API deverá ser adotado, muito dependerá das necessidades do cliente, comentadas no parágrafo anterior. Dentre tipos comuns de API temos a RESTful, a SOAP, e até mesmo a JSON-RPC. Embora cada uma tenha sua peculiaridades e diferentes aplicabilidades, a REST possuí "padrões"  bem definidos e atuais. A REST apresenta diversas vantagens sobre as demais. Vide imagem.
+Quanto ao tipo de API deverá ser adotado, muito dependerá das necessidades do cliente, conforme comentadas no parágrafo anterior. Dentre tipos comuns de API temos a RESTful, a SOAP, e até mesmo a JSON-RPC. Embora cada uma tenha suas peculiaridades e diferentes aplicabilidades, a REST possuí "padrões" bem definidos e características que fazem dela um dos tipos de API's amplamente adotado.
 
 ### Considerações sobre tempo de vida e versionamento
 
-API's devem ser construídas de maneira a serem extensíveis e sobre padrões e principalmente para serem duráveis. Por seguirem padrões requerem a manutenção constante dela de maneira a otimizar e ampliar suas funcionalidades. O esforço investido na API deve ser focado na extensão das possibilidades e otimização dela e não em correção de bugs. Isto irá garantir que ela cumpra seu papel com eficácia e atenda aos objetivos do cliente sobretudo.
+API's devem ser construídas de maneira a serem extensíveis e sobre padrões e principalmente para serem duráveis. Por seguirem padrões requerem a manutenção constante dela de maneira a otimizar e ampliar suas funcionalidades. O esforço investido na API deve ser focado na extensão das possibilidades e otimização dela e não em correção de bugs. Isto irá garantir que ela cumpra seu papel com eficácia e atenda aos objetivos do cliente sobretudo durante seu ciclo de vida.
 
 Para o devido lançamento de melhorias, extensões e/ou correções deve-se adotar a estratégia de versionamento. O versionamento é a garantia de um melhor gerenciamento de suporte e manutenção, principalmente quando se tem em produção níveis diferentes em seus clientes. Além da garantia de transições controladas entre atualizações e migrações.
 
-Um grande desafio, durante o ciclo de vida da API é lançar versões que consigam manter a compatibilidade entre os demais níveis ao mesmo tempo que atualizações sejam promovidas com o mínimo de impacto. Assim, este é o grande motivo que nos obriga a construir API's com foco no logo prazo da sua duração.
+Um grande desafio, durante o ciclo de vida da API é lançar versões que consigam manter a compatibilidade entre os demais níveis ao mesmo tempo que atualizações sejam promovidas com o mínimo de impacto. Assim, este é o grande motivo que nos obriga a construir API's com foco no longo prazo de sua duração.
 
 ### Desenvolvimento baseado em especificações
 
-A definição da API quando realizada durante o seu desenvolvimento pode tornar a construção mais rápida inicialmente, porém inconsistente durante o decorrer da fase de codificação. Para garantir então o desenvolvimento de uma API consistente e com padrões reutilizáveis existem especificações de modelagens como RAML.
+A definição da API quando realizada durante o seu desenvolvimento pode tornar a construção mais rápida inicialmente, porém inconsistente durante o decorrer da fase de codificação. Para garantir então o desenvolvimento de uma API consistente e com padrões reutilizáveis existem especificações de modelagens como [RAML](https://raml.org/).
 
-Quando o desenvolvimento é baseado em especificações demais benefícios são garantidos sobretudo a rapidez, padronização e universalidade dos métodos, que serão facilmente implementados pelos desenvolvedores. Assim é necessário planejar, desenhar e especificar a API antes de construí-la.
+Quando o desenvolvimento é baseado em especificações, demais benefícios são garantidos, sobretudo, a rapidez, padronização e universalidade dos métodos, que serão facilmente implementados pelos demais desenvolvedores. Assim é necessário planejar, desenhar e especificar a API antes de construí-la.
 
 ### Representações de recursos
 
-De acordo com o modelo de API adotado os recursos devem ser representados de maneiras diferentes. No caso de um modelo REST, os recursos devem corresponder a substantivos, diferente de modelos como JSON-RPC que fazem uso de verbos, indicando ações. O verbo está diretamente ligado a uma ação geralmente.
+De acordo com o modelo de API adotado, os recursos devem ser representados de maneiras diferentes. No caso de um modelo REST, os recursos devem corresponder a substantivos, diferente de modelos como JSON-RPC que fazem uso de verbos, indicando ações. O verbo está diretamente ligado a uma ação geralmente.
 
-Como boa prática a representação de recursos da API estes devem seguir o modelo adotado sendo no plural, quando tratar-se de substantivos e, no singular quando representarem ações específicas.
+Como boa prática a representação de recursos da API estes devem seguir o modelo adotado, sendo no plural, quando tratar-se de substantivos e, no singular, quando representarem ações específicas. Seguem exemplos de ambas abordagens:
 
-Seguem ambos exemplos:
-
-- JSON-RPC:
+- **JSON-RPC**:
 
 ```
 /adicionarNovoEmpregado/
@@ -56,7 +54,7 @@ Seguem ambos exemplos:
 /deletarTodosEmpregados/
 ```
 
- - REST:
+ - **REST**:
 
 ```
 /empregado/id/1
@@ -65,9 +63,42 @@ Seguem ambos exemplos:
 
 ### CRUD
 
-Da mesma maneira que uso do CRUD é amplamente utilizado independente da plataforma tecnológica o uso deste modelo é mais uma boa prática recomendada para o desenvolvimento de API's eficientes.
+Da mesma maneira que uso do CRUD é amplamente utilizado independente da plataforma tecnológica, o uso deste modelo é mais uma boa prática recomendada para o desenvolvimento de API's eficientes.
 
-Quanto ao modelo REST este apresenta total compatibilidade entre os verbos/métodos HTTP `POST`,`GET`,`PUT|PATCH`,`DELETE` e as operações CRUD `create`, `read`, `update`, `delete` respectivamente.
+Quanto ao modelo **REST** este apresenta total compatibilidade entre os verbos/métodos HTTP `POST`,`GET`,`PUT|PATCH`,`DELETE` e as operações CRUD `create`, `read`, `update`, `delete` respectivamente. Para uma adequada utilização dos verbos/métodos HTTP se faz necessário também um adequado tratamento dos "exit status", devento então haver coerência na implementação.
+
+  * **POST**: O método `POST` é amplamente utilizado para criar novos recursos, havendo inclusive a possibilidade da criação de recursos subordinados durante uma mesma requisição. Ou seja, através deste método é possível fazer uma associação parental entre o recurso que está sendo criado com algum outro preexistente.
+
+```
+POST http://apiurl/empregado/54321/vendas/98765
+```
+
+
+  * **GET**: O método `GET` é utilizado para recuperar ou ler a representação de algum recurso. Como retorno será obtido um exit status que indicará o status do recurso requisitado, podendo ser 400 (NOT FOUND) ou 404 (BAD REQUES) ou 200 (OK), além de uma saída no formado JSON, XML ou outros.
+
+```
+GET http://apiurl/empregado/54321
+GET http://api.url/empregado/5432/vendas
+```
+
+  * **PUT**: De maneira generalista o verbo `PUT` é utulizado para atualizar algum recurso através de um indentificador previamente conhecido. O `PUT` é também utilizado para criação de recursos quando a atributo chave não é definido pelo servidor, mas pelo requisitante.
+
+```
+PUT http://apiurl/empregado/54321/vendas/98765
+```
+
+  * **PATCH**: Similar ao `PUT`, o `PATCH` é utilizado para atualização "parcial" de algum atributo do recurso. Significa que não há necessidade de atualizar o item por completo.
+
+```
+PATCH http://apiurl/empregado/54321/vendas/98765
+```
+
+  * **DELETE**: Como o verbo sugere, o `DELETE` é útil para a exclusão de recursos e a eficácia de sua implementação, assim como os demais métodos, se dará pelo adequado tratamento dos códigos de retorno HTTP. Similar ao `POST` este verbo suporta a manipulação de recursos subordinados.
+
+```
+DELETE http://apiurl/empregado/54321
+DELETE http://api.url/empregado/5432/vendas
+```
 
 ### JSON
 
@@ -86,7 +117,7 @@ Mediante a tantas possibilidades de conteúdos, a flexibilidade e extensibilidad
 
 ### Tratamento adequado dos status de retorno HTTP (exit status)
 
-O protocolo HTTP dispõe de um incrível pool de exit status quais devem garantir precisão nas respostas as requisições. O adequado uso das saídas garantirá um dialogo perfeito entre a API e a aplicação requisitante, o que assegurará maior controle das operaçÕes nas mãos dos desenvolvedores.
+O protocolo HTTP dispõe de um incrível pool de exit status quais devem garantir precisão nas respostas as requisições feitas a API, sobretudo, no modelo REST, que realiza as operações de CRUD através dos métodos HTTP.  O adequado uso das saídas garantirá um dialogo perfeito entre a API e a aplicação requisitante, o que assegurará maior controle das operaçÕes nas mãos dos desenvolvedores.
 
 Os exit status garante o status de resposta as operações CRUD requisitadas. Seguem exemplos:
 
@@ -98,7 +129,7 @@ Os exit status garante o status de resposta as operações CRUD requisitadas. Se
 
 A segurança da API é mais um aspecto que deve ser considerado criteriosamente independente dela lidar com dados sensíveis. Uma boa prática é fazer uso do SSL, pois este protocolo garante a segurança dos dados enquanto transmitidos através das redes.
 
-O SSL representa uma dos mais importantes artifícios de segurança da segurança da web na atualidade por garantir, dente outros aspectos, a autenticidade, integridade e confidencialidade dos dados enquanto transmitidos.
+O SSL representa uma dos mais importantes artifícios de segurança da web na atualidade por garantir, dente outros aspectos, a autenticidade, integridade e confidencialidade dos dados enquanto transmitidos.
 
 Deve ser considerado que uso o SSL "apenas" não irá garantir a segurança plena da API. Demais artifícios e práticas de "hardening", no código e na infraestrutura (middleware), devem ser aplicados de maneira a mitigar ao máximo os risco e vulnerabilidades de segurança antes da publicação da API.
 
@@ -129,6 +160,7 @@ Alguns dos benefícios de se usar uma API rest são: performance, escalabilidade
 Destacamos duas das vantagens: `"performance"` e a `"escalabilidade"`. `"Performance"`, pois ela garante mínimo custo p/ o servidor pois no método http invocado estarão contidas todas as informações necessárias.  `"Escalabilidade"` pois, uma vez sendo "stateless", não há necessidade de propagar as sessões entre servidores.
 
 ## links úteis
+- http://www.restapitutorial.com/lessons/httpmethods.html
 - https://www.sslshopper.com/why-ssl-the-purpose-of-using-ssl-certificates.html
 - https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/
 - https://trends.google.com/trends/explore?date=all&q=xml%20api,json%20api
