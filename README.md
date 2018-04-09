@@ -121,6 +121,14 @@ O protocolo HTTP dispõe de um incrível pool de exit status quais devem garanti
 
 Os exit status garante o status de resposta as operações CRUD requisitadas. Seguem exemplos:
 
+| Método | CRUD            | Exit Status                                    |
+|:------:|:---------------:|------------------------------------------------|
+| POST   | CREATE          | 201 (created), 404 (not found), 409 (conflict) |
+| GET    | READ            | 200 (ok), 404 (not found)                      |
+| PUT    | UPDATE/REPLACE  | 405 (not allowed), 200 (ok), 204 (not found)   |
+| PATCH  | UPDATE/MODIFY   | 405 (not allowed), 200 (ok), 204 (not found)   |
+| DELETE | DELETE          | 405 (not allowed), 200 (ok), 204 (not found)   |
+
 ### Filtering, sorting, field selection and paging
 
 
