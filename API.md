@@ -141,6 +141,12 @@ O SSL representa uma dos mais importantes artifícios de segurança da web na at
 
 Deve ser considerado que uso o SSL "apenas" não irá garantir a segurança plena da API. Demais artifícios e práticas de "hardening", no código e na infraestrutura (middleware), devem ser aplicados de maneira a mitigar ao máximo os risco e vulnerabilidades de segurança antes da publicação da API.
 
+### HATEOAS
+
+### Caching
+
+### Documentação
+
 ## Glossário
 
 ### API:
@@ -163,6 +169,8 @@ Destacamos duas das vantagens: `"performance"` e a `"escalabilidade"`. `"Perform
 
 ## links úteis
 
+- https://httpstatuses.com/
+- https://httpstatuses.com/
 - http://www.restapitutorial.com/lessons/httpmethods.html
 - https://www.sslshopper.com/why-ssl-the-purpose-of-using-ssl-certificates.html
 - https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/
