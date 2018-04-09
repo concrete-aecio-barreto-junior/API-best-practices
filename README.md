@@ -41,6 +41,8 @@ Quando o desenvolvimento é baseado em especificações demais benefícios são 
 
 De acordo com o modelo de API adotado os recursos devem ser representados de maneiras diferentes. No caso de um modelo REST, os recursos devem corresponder a substantivos, diferente de modelos como JSON-RPC que fazem uso de verbos, indicando ações. O verbo está diretamente ligado a uma ação geralmente.
 
+Como boa prática a representação de recursos da API estes devem seguir o modelo adotado sendo no plural, quando tratar-se de substantivos e, no singular quando representarem ações específicas.
+
 Seguem ambos exemplos:
 
 - JSON-RPC:
@@ -59,13 +61,11 @@ Seguem ambos exemplos:
 /pedido/
 ```
 
-> Como boa prática a representação de recursos da API estes devem seguir o modelo adotado sendo no plural, quando tratar-se de substantivos e, no singular quando representarem ações específicas.
-
 ### CRUD
 
 Da mesma maneira que uso do CRUD é amplamente utilizado independente da plataforma tecnológica o uso deste modelo é mais uma boa prática recomendada para o desenvolvimento de API's eficientes.
 
-Quanto ao modelo REST, este apresenta total compatibilidade entre os verbos/métodos **HTTP (`POST`,`GET`,`PUT|PATCH`,`DELETE`)** e as **operações CRUD (`create`, `read`, `update`, `delete`)** respectivamente.
+Quanto ao modelo REST, este apresenta total compatibilidade entre os verbos/métodos HTTP `POST`,`GET`,`PUT|PATCH`,`DELETE` e as operações CRUD `create`, `read`, `update`, `delete` respectivamente.
 
 ### JSON
 
