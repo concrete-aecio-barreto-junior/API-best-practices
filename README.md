@@ -107,7 +107,7 @@ A adoção do padrão JSON como respostas, além da simplicidade e versatilidade
 Tendencias indicam que o XML tem perdido espaço p/ o JSON:
 
 ![Comparsion](https://github.com/concrete-aecio-barreto-junior/API-best-practices/blob/master/images/comparsion.png "Comparsion")
-[Comparação xml x json api's (Google Trends)](https://trends.google.com/trends/explore?date=all&q=xml%20api,json%20api)
+[Comparação (XML x JSON) API's - Google Trends](https://trends.google.com/trends/explore?date=all&q=xml%20api,json%20api)
 
 ### Content-Type Header
 
