@@ -141,12 +141,6 @@ O SSL representa uma dos mais importantes artifícios de segurança da web na at
 
 Deve ser considerado que uso o SSL "apenas" não irá garantir a segurança plena da API. Demais artifícios e práticas de "hardening", no código e na infraestrutura (middleware), devem ser aplicados de maneira a mitigar ao máximo os risco e vulnerabilidades de segurança antes da publicação da API.
 
-### HATEOAS
-
-### Caching
-
-### Documentação
-
 ## Glossário
 
 ### API:
@@ -168,6 +162,7 @@ Alguns dos benefícios de se usar uma API rest são: performance, escalabilidade
 Destacamos duas das vantagens: `"performance"` e a `"escalabilidade"`. `"Performance"`, pois ela garante mínimo custo p/ o servidor pois no método http invocado estarão contidas todas as informações necessárias.  `"Escalabilidade"` pois, uma vez sendo "stateless", não há necessidade de propagar as sessões entre servidores.
 
 ## links úteis
+
 - http://www.restapitutorial.com/lessons/httpmethods.html
 - https://www.sslshopper.com/why-ssl-the-purpose-of-using-ssl-certificates.html
 - https://phraseapp.com/blog/posts/best-practice-10-design-tips-for-apis/
