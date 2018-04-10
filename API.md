@@ -125,9 +125,9 @@ Os exit status garante o status de resposta as operações CRUD requisitadas. Se
 |:------:|:---------------:|------------------------------------------------|
 | POST   | CREATE          | 201 (created), 404 (not found), 409 (conflict) |
 | GET    | READ            | 200 (ok), 404 (not found)                      |
-| PUT    | UPDATE/REPLACE  | 405 (not allowed), 200 (ok), 204 (not found)   |
-| PATCH  | UPDATE/MODIFY   | 405 (not allowed), 200 (ok), 204 (not found)   |
-| DELETE | DELETE          | 405 (not allowed), 200 (ok), 204 (not found)   |
+| PUT    | UPDATE/REPLACE  | 405 (not allowed), 200 (ok), 204 (no content)   |
+| PATCH  | UPDATE/MODIFY   | 405 (not allowed), 200 (ok), 204 (no content)   |
+| DELETE | DELETE          | 405 (not allowed), 200 (ok), 204 (no content)   |
 
 ### Filtering, sorting, field selection and paging
 
@@ -169,7 +169,6 @@ Destacamos duas das vantagens: `"performance"` e a `"escalabilidade"`. `"Perform
 
 ## links úteis
 
-- https://httpstatuses.com/
 - https://httpstatuses.com/
 - http://www.restapitutorial.com/lessons/httpmethods.html
 - https://www.sslshopper.com/why-ssl-the-purpose-of-using-ssl-certificates.html
